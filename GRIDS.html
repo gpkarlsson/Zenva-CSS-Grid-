@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>CSS Grid</title>
+
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+            <!--CSS Grids-->
+        <style>
+            
+            /*CSS rules for styling*/
+
+
+            /*Parent class rules*/
+            #parent { background: rgba(0,0,0,.5); display: grid;
+                /*set up different widths based on fractions of the available space*/ 
+                
+                /*NEW*/
+                /*adding another 'auto' increases the number of columns*/
+                /*different units of measurement can be used*/
+                /*grid-template-columns: 250px auto 100px auto ;*/
+                grid-template-columns: 1fr 2fr 1fr; 
+                
+                /*set the number of rows and their heights*/
+                grid-template-rows: 100px 150px 50px; } 
+
+               
+      
+
+            /*child class rules*/
+            .child1 { background: skyblue; }
+            .child2 { background: powderblue; }
+            .child3 { background: cadetblue; }
+            /*New child grid elements*/
+            .child4 { background: indianred; }
+            .child5 { background: salmon; }
+            .child6 { background: firebrick; }
+
+        </style>
+
+    </head>
+    <body>
+            <!--Parent Grid Container-->
+        <div id="parent">
+
+            <!--Child Grid elements-->
+            <div class="child1">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+            <div class="child2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+            <div class="child3">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+            <div class="child4">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+            <div class="child5">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+            <div class="child6">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+
+
+        </div>
+
+    </body>
+</html>
